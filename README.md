@@ -12,7 +12,7 @@ An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** 
 - 🧠 Semantic search with MiniLM embeddings
 - ⚡ Fast retrieval using **FAISS**
 - 🤖 Powered by **LLaMA 3** via **Groq API**
-- 🧩 Based on the RAG architecture (Retrieval-Augmented Generation)
+- 🧩 Based on the **RAG architecture** (Retrieval-Augmented Generation)
 - 💬 Easy-to-use interface via **Streamlit**
 
 ---
@@ -31,37 +31,6 @@ An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** 
 | Environment Var  | python-dotenv                          |
 
 ---
-
-⚙️ How It Works (RAG Workflow)
-Upload PDF: A user uploads a text-based PDF
-
-Extract Text: Extracted using PyMuPDF
-
-Split Text: Chunked via LangChain
-
-Embed: Chunks converted to vectors using MiniLM
-
-Store: Vectors stored in FAISS
-
-Query:
-
-Question → Similar chunks retrieved
-
-Chunks + Question → sent to LLaMA 3
-
-LLM generates a final context-based answer
-
-✅ This is a Retrieval-Augmented Generation (RAG) system.
-
-
-
-
-
-
-
-
-
-
 
 ## ⚙️ How It Works (RAG Workflow)
 
