@@ -58,7 +58,6 @@ If the answer is not present in the context, respond with:
 
 Use this structure:
 Answer: <your answer>
-Sanskrit Reference: <if applicable>
 Source Summary: <brief source location or context>
 
 Context:
