@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-community
+langchain-core
+langchain-groq
+sentence-transformers
+faiss-cpu
+PyMuPDF
+pdf2image
+pytesseract
+Pillow
+streamlit
+requests
+python-dotenv
+tqdm
