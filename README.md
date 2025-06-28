@@ -1,23 +1,23 @@
 # 🌿 Ayurveda Q/A Chatbot
 
 
-An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** and ask questions based on the content using RAG (Retrieval-Augmented Generation) — combining **semantic search** and **LLM-based responses**.
+An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** and ask questions based on the content using RAG (Retrieval-Augmented Generation) combining **semantic search** and **LLM-based responses**.
 ---
 
-## ✨ Features
+## Features
 
-- ✅ Upload Ayurveda PDFs (text-based only)
-- 🔍 Ask natural-language questions based on uploaded content
-- ✂️ Chunk text smartly using LangChain
-- 🧠 Semantic search with MiniLM embeddings
-- ⚡ Fast retrieval using **FAISS**
-- 🤖 Powered by **LLaMA 3** via **Groq API**
-- 🧩 Based on the **RAG architecture** (Retrieval-Augmented Generation)
-- 💬 Easy-to-use interface via **Streamlit**
+- Upload Ayurveda PDFs (text-based only) 
+- Ask natural-language questions based on uploaded content
+- Chunk text smartly using LangChain
+- Semantic search with MiniLM embeddings
+- Fast retrieval using **FAISS**
+- Powered by **LLaMA 3** via **Groq API**
+- Based on the **RAG architecture** (Retrieval-Augmented Generation)
+- Easy-to-use interface via **Streamlit**
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Component        | Technology                             |
 |------------------|-----------------------------------------|
@@ -32,7 +32,7 @@ An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** 
 
 ---
 
-## ⚙️ How It Works (RAG Workflow)
+##  How It Works (RAG Workflow)
 
 1. **Upload**: User uploads a **text-based PDF**
 2. **Text Extraction**: PDF is read using **PyMuPDF**
