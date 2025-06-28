@@ -1,7 +1,7 @@
 # 🌿 Ayurveda Q/A Chatbot
 
-An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** and ask questions directly from the content using **semantic search** and **LLM-based responses**.
 
+An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** and ask questions based on the content using RAG (Retrieval-Augmented Generation) — combining **semantic search** and **LLM-based responses**.
 ---
 
 ## ✨ Features
@@ -12,6 +12,7 @@ An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** 
 - 🧠 Semantic search with MiniLM embeddings
 - ⚡ Fast retrieval using **FAISS**
 - 🤖 Powered by **LLaMA 3** via **Groq API**
+- 🧩 Based on the RAG architecture (Retrieval-Augmented Generation)
 - 💬 Easy-to-use interface via **Streamlit**
 
 ---
@@ -31,14 +32,48 @@ An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** 
 
 ---
 
-## ⚙️ How It Works
+⚙️ How It Works (RAG Workflow)
+Upload PDF: A user uploads a text-based PDF
+
+Extract Text: Extracted using PyMuPDF
+
+Split Text: Chunked via LangChain
+
+Embed: Chunks converted to vectors using MiniLM
+
+Store: Vectors stored in FAISS
+
+Query:
+
+Question → Similar chunks retrieved
+
+Chunks + Question → sent to LLaMA 3
+
+LLM generates a final context-based answer
+
+✅ This is a Retrieval-Augmented Generation (RAG) system.
+
+
+
+
+
+
+
+
+
+
+
+## ⚙️ How It Works (RAG Workflow)
 
 1. **Upload**: User uploads a **text-based PDF**
 2. **Text Extraction**: PDF is read using **PyMuPDF**
 3. **Chunking**: Text is broken into smaller pieces using **RecursiveCharacterTextSplitter**
 4. **Embedding**: Chunks are embedded using **HuggingFace MiniLM**
 5. **Vector DB**: Chunks are stored in a **FAISS** vector store
-6. **Q&A**: A user asks a question → most relevant chunks are retrieved → **LLaMA 3** answers using those
+6. **Q&A**:Question → Similar chunks retrieved
+           Chunks + Question → sent to **LLaMA 3** 
+           LLM generates a final context-based answer
+           ✅ This is a ** Retrieval-Augmented Generation (RAG) ** system.             
 
 ---
 
