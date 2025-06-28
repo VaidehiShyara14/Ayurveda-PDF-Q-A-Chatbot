@@ -42,7 +42,7 @@ An intelligent chatbot that allows users to upload **text-based Ayurveda PDFs** 
 6. **Q&A**:Question → Similar chunks retrieved
            Chunks + Question → sent to **LLaMA 3** 
            LLM generates a final context-based answer
-           ✅ This is a ** Retrieval-Augmented Generation (RAG) ** system.             
+           This is a **Retrieval-Augmented Generation (RAG)** system.             
 
 ---
 
